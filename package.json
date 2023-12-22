@@ -15,8 +15,17 @@
   },
   "homepage": "https://github.com/danieldrv8/react-principiantes#readme",
   "dependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "parcel-bundler": "^1.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2"
   }
 }
