@@ -2,6 +2,7 @@ import React from "react";
 import classNames from 'classnames';
 import './App.css'
 import WishInput from "./WishInput";
+import WishList from "./WishList";
 
 const wishes = [
     { done: false, text: 'Travel to the moon' },
@@ -14,19 +15,7 @@ const App = () => (
     <div className="app">
     <h1>My wishlist</h1>
     <WishInput></WishInput>
-    <ul className="wish-list">
-      {wishes.map(({ done, text }, i) => (
-        <li
-          key={text}
-          className={classNames('wish-list__item', {
-            'wish-list__item--done': done,
-          })}
-        >
-          <input id={`wish${i}`} type="checkbox" checked={done} />
-          <label htmlFor={`wish${i}`}>{text}</label>
-        </li>
-      ))}
-    </ul>
+    <WishList wishes={wishes}/>
     <button type="button" className="wish-clear">
       Archive done
     </button>
